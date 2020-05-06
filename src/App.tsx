@@ -37,7 +37,13 @@ const App: FunctionComponent<{ initial?: Repository[] }> = ({ initial = [] }) =>
 							e.preventDefault();
 							fetchRepos();
 						}}>
-						<input type="text" onChange={e => setUsername(e.target.value)} value={username} />
+						<label htmlFor="usernameInput">Github Username:</label>
+						<input
+							id="usernameInput"
+							type="text"
+							onChange={e => setUsername(e.target.value)}
+							value={username}
+						/>
 						<button onClick={fetchRepos}>Generate</button>
 					</form>
 					{ready ? <h1>No repositories found!</h1> : null}

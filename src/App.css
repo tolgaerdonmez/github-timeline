@@ -39,6 +39,12 @@ body {
 	margin: 5px;
 }
 
+.user-form label {
+	color: #f2f5ea;
+	font-size: 1.5em;
+	margin: 5px;
+}
+
 .user-form button {
 	font-size: 1.5em;
 	padding: 10px;
