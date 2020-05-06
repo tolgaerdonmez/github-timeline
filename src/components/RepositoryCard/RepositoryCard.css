@@ -1,0 +1,52 @@
+/* 
+gunmetal 2c363f
+blush e75a7c
+ivory f2f5ea
+middle blue 92dce5
+gray(web) 7c7c7c
+*/
+
+/* .repo-card {
+	padding: 20px 35px 20px 35px;
+
+	display: flex;
+	justify-content: center;
+	background-color: #2c363f;
+	border-radius: 20px;
+	color: #f2f5ea;
+
+	width: 60vw;
+	font-size: 1.2em;
+	line-height: 1em;
+} */
+
+.repo-card {
+	color: #f2f5ea;
+}
+
+.repo-card a {
+	text-decoration: none;
+	color: #f2f5ea;
+}
+
+.repo-card h2 {
+	margin: 0;
+	padding: 0;
+	font-weight: 800;
+}
+
+.repo-card h2 span {
+	background-color: #67c2ce;
+	border-radius: 50px;
+
+	padding: 10px;
+}
+
+.repo-card .desc {
+	margin-top: 25px;
+}
+
+.repo-card .desc,
+.repo-card .date {
+	padding: 0 10px;
+}

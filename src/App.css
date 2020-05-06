@@ -1,38 +1,54 @@
-.App {
-  text-align: center;
+/* 
+gunmetal 2c363f
+blush e75a7c
+ivory f2f5ea
+middle blue 92dce5
+gray(web) 7c7c7c
+*/
+
+body {
+	background-color: #2c363f;
+	height: 2000px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App h1 {
+	text-align: center;
+	color: #f2f5ea;
+	font-size: 3em;
+	margin: 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.username {
+	text-align: center;
+	color: #f2f5ea;
+	font-size: 2.5em;
+	margin: 5px 0 25px 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.user-form {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.user-form input {
+	border: none;
+	border-radius: 20px;
+	font-size: 2em;
+	padding: 10px;
+	margin: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.user-form button {
+	font-size: 1.5em;
+	padding: 10px;
+	margin: 5px;
+	border-radius: 20px;
+	border: none;
+	background-color: #e43961;
+	transition-duration: 0.2s;
+	color: #f2f5ea;
+}
+.user-form button:hover {
+	background-color: #b53b58;
 }
