@@ -8,7 +8,7 @@ const instance: AxiosInstance = axios.create({
 });
 
 const _getRepos = async (username: string, count: number, cursor?: string) => {
-	if (cursor) cursor = ` ,after:"${cursor}"`;
+	if (cursor !== undefined && cursor.length > 0) cursor = ` ,after:"${cursor}"`;
 	const query: string = `
             query{
                 user(login: "${username}") {
@@ -57,7 +57,7 @@ export const getRepos = async (username: string) => {
 		while (totalCount > 0) {
 			let _repos: Repository[] = [];
 			if (totalCount < 100) {
-				_repos = await _getRepos(username, totalCount);
+				_repos = await _getRepos(username, totalCount, cursor);
 				// console.log(totalCount, _repos.length, _repos, cursor, _repos[_repos.length - 1]);
 			} else {
 				_repos = await _getRepos(username, 100, cursor);

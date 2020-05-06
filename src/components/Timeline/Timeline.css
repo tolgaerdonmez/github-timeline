@@ -50,7 +50,7 @@ gray(web) 7c7c7c
 
 	border-top: 15px solid transparent;
 	border-bottom: 15px solid transparent;
-	border-right: 15px solid white;
+	border-right: 15px solid #f2f5ea;
 }
 
 .timeline ul li:nth-child(even)::before {
@@ -62,5 +62,5 @@ gray(web) 7c7c7c
 
 	border-top: 15px solid transparent;
 	border-bottom: 15px solid transparent;
-	border-left: 15px solid white;
+	border-left: 15px solid #f2f5ea;
 }
